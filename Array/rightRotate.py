@@ -46,5 +46,5 @@ def rightrotation(arr,k):
     split1 = new_arr[:k][::-1]
     split2 = new_arr[k:][::-1]
     return split1+split2
-arr = [1,2,3,4,5,6,7,8,9]
+arr = [1,2,3,4,5]
 print(rightrotation(arr,3)) 
