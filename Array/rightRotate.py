@@ -14,7 +14,7 @@ def rightrotation(arr,k):
             arr[i] = arr[i-1]
         arr[0] = last
     return arr
-arr = [1,2,3,4,5,6,7,8,9]
+arr = [1,2,3,4,5]
 print(rightrotation(arr,3)) 
 
 
@@ -32,7 +32,7 @@ def rightrotation(arr,k):
         index = (i+k)%n
         temp[index] = arr[i]
     return temp
-arr = [1,2,3,4,5,6,7,8,9]
+arr = [1,2,3,4,5]
 print(rightrotation(arr,3)) 
 
 # Better approach 2
