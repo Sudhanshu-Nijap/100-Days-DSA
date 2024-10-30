@@ -1,9 +1,8 @@
-# Better approach 1
-# Pattern
-# 1. temp array [0]*size of array
-# 2. loop by n (size)
-# 3. formula index = (i-k)%n
-# 4. temp[index] =  arr[i]
+#Length of arr -> n = len(arr)
+# Make a temporary array to store the result -> temp = [0]*n
+# Loop -> for i in range(n):
+#            index = (i-k)%n        (Formula to left rotate)
+#   
 
 def leftrotation(arr,k):
     n = len(arr)

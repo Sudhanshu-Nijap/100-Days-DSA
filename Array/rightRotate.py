@@ -19,11 +19,12 @@ print(rightrotation(arr,3))
 
 
 # Better approach 1
-# Pattern
-# 1. temp array [0]*size of array
-# 2. loop by n (size)
-# 3. formula index = (i+k)%n
-# 4. temp[index] =  arr[i]
+#Length of arr -> n = len(arr)
+# Make a temporary array to store the result -> temp = [0]*n
+# Loop -> for i in range(n):
+#            index = (i+k)%n        (Formula to right rotate)
+#            temp[index] = arr[i]   (Store the elements in temp)
+
 
 def rightrotation(arr,k):
     n = len(arr)
@@ -32,7 +33,7 @@ def rightrotation(arr,k):
         index = (i+k)%n
         temp[index] = arr[i]
     return temp
-arr = [1,2,3,4,5]
+arr = [1,2,3,4,5,6,7]
 print(rightrotation(arr,3)) 
 
 # Better approach 2
@@ -48,3 +49,13 @@ def rightrotation(arr,k):
     return split1+split2
 arr = [1,2,3,4,5]
 print(rightrotation(arr,3)) 
+
+#pattern4
+def rotate(nums, k):
+    n = len(nums)
+    k = k%n
+    nums.reverse()
+    nums[:k]=reversed(nums[:k])
+    nums[k:]=reversed(nums[k:])
+    return nums
+print(rotate([1,2,3,4,5],3))
