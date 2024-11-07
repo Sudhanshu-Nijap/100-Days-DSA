@@ -19,3 +19,18 @@ def twosum(arr,target):
         if y in h and h[y] != i:
             return [i,h[y]]
 print(twosum([2,7,11,15],9))
+
+#two pointer technique
+def twosum(arr,target):
+    l = 0
+    r = len(arr)-1
+    while l<r:
+        total = arr[l]+arr[r]
+        if  total == target:
+            return [l+1,r+1]
+        elif total < target:
+            l+=1
+        else:
+            r-=1
+
+print(twosum([2,7,11,15],18))
