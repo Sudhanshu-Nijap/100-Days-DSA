@@ -12,7 +12,7 @@ def isvalid(s):
                 popped = stack.pop()
                 if popped != hashmap[c]:
                     return False
-    return not stack # stack is empty i.e True
+    return not stack # Stack is empty i.e True
 
 print(isvalid("()"))
         
