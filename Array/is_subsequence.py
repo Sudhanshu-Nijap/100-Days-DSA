@@ -11,5 +11,5 @@ def isSubsequence(s: str, t: str) -> bool:
                     return True
                 j+=1
         return False
-
+ 
 print(isSubsequence('abc','ahbqwec'))
