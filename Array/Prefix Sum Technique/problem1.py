@@ -1,3 +1,4 @@
+# multiple query range
 def prefix(arr,query)->list:
     n = len(arr)
     for i in range(1,n):
