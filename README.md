@@ -1,1 +1,1 @@
-Learning DSA from scratch.
+Learning DSA from scratch. (PYTHON)
